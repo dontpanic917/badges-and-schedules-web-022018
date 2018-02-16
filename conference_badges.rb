@@ -5,14 +5,14 @@ end
 
 def batch_badge_creator(attendees)
   list=[]
-  attendees.each {|attendee| list << "Hello, my name is #{attendee}.\n"}
+  attendees.each {|attendee| list << "Hello, my name is #{attendee}. \n"}
   return list
 end
 
 def assign_rooms(attendees)
   list=[]
   roomnum=1
-  attendees.each {|attendee| list << "Hello, #{attendee}! You'll be assigned to room #{roomnum}!"\n; roomnum += 1}
+  attendees.each {|attendee| list << "Hello, #{attendee}! You'll be assigned to room #{roomnum}! \n"; roomnum += 1}
   return list
 end
 
