@@ -15,3 +15,8 @@ def assign_rooms(attendees)
   attendees.each {|attendee| list << "Hello, #{attendee}! You'll be assigned to room #{roomnum}!"; roomnum += 1}
   return list
 end
+
+def printer(attendees)
+  puts batch_badge_creator(attendees)
+  puts assign_rooms(attendees)
+end
